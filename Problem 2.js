@@ -17,7 +17,16 @@ var evenNumbers = [];
 
 for(var n = 1; fib[n] < 4000000; n++) {
 	fib[n+1] = (fib[n] + fib[n-1]); 
+	
 	if(fib[n+1] % 2 == 0) {
 		evenNumbers.push(fib[n+1]);
 	}
 };
+
+var total = 0;
+for(j = 0; j < evenNumbers.length; j++) {
+	total += evenNumbers[j];
+}
+
+console.log(evenNumbers);
+console.log(total);
