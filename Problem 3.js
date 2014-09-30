@@ -12,11 +12,8 @@ var divisors = [];
 			num = num / i;
 		}
 	}
-	console.log(divisors)
-
-
-
-console.log(divisors[divisors.length - 1])
+	console.log(divisors);
+console.log(divisors[divisors.length - 1]);
 };
 
 /* FIRST SOLUTION
