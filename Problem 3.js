@@ -34,12 +34,17 @@ var divisors = [];
 	console.log(divisors)
 
 var primeDivisors = [];
-	for (var j = 0; j < divisors.length; j++) { //main loop, iterates over all numbers in divisors[]
-		for (var k = 2; k <= divisors[j]; k++) { //iterate over all divisors of THIS number
-			if (divisors[j] % k == 0 && (divisors[j] != k)) { //if k is a divisor of divisor[j] then we go to the next number in the previous for loop
+	for (var j = 0; j < divisors.length; j++) { 
+	//main loop, iterates over all numbers in divisors[]
+		for (var k = 2; k <= divisors[j]; k++) { 
+		//iterate over all divisors of THIS number
+			if (divisors[j] % k == 0 && (divisors[j] != k)) { 
+			//if k is a divisor of divisor[j] then we go to the next number in the previous for loop
 				break;
 			}
-			else if (divisors[j] == k){ //if we have iterated over all k's to the point that k= divisor[j] then divisor[j] has no divisors and is prime
+			else if (divisors[j] == k){ 
+			//if we have iterated over all k's to the point that k= divisor[j] 
+			//then divisor[j] has no divisors and is prime
 				primeDivisors.push(k);
 			}
 		}
