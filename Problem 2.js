@@ -11,7 +11,6 @@ million, find the sum of the even-valued terms.*/
 var fib = [];
 fib[0] = 0;
 fib[1] = 1;
-fib[2] = 2;
 
 var evenNumbers = [];
 
